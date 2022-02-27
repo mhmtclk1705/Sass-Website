@@ -1,0 +1,52 @@
+.myprojects-portfolio-container{
+   
+    @include bgImage(40vh,$background-image-url);
+
+}
+.myprojects-portfolio-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    height: 72vh;
+
+    
+}
+
+.myprojects-portfolio-footer-content{
+    padding: 20px;
+    width: 90vw;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;        
+        div{
+        display: flex;
+        flex-direction: row;
+        width: 33%;
+        border-bottom: 5px solid $secondary-color;
+        margin-bottom: 10px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            background: $secondary-color;
+            opacity: 0;
+          }
+        &:hover::after{
+            opacity: 0.7;
+            cursor: pointer;
+            @include transition(1s);
+        }  
+          
+        
+    }
+        img{
+            width: 100%;
+        }
+        
+        
+    
+}

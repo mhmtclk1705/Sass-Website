@@ -1,0 +1,14 @@
+@import './base/reset', './abstracts/mixins', './abstracts/variables';
+@import './pages/home', './pages/about', './pages/projects', './pages/contact';
+@import './components/nav', './components/footer';
+
+
+body{
+    font-family: $font-family;
+    line-height: 1;
+    color: $text-color;
+    height: 100vh;
+    background-color: $primary-color;
+    
+    
+}

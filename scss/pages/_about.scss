@@ -1,0 +1,33 @@
+.about-portfolio-container{
+
+    @include  bgImage(60vh, $background-image-url);//'../img/model-1.jpg'
+}
+
+.about-portfolio-content{
+    padding: 30px;
+    text-align: center;
+    h2{
+        font-size: 2.5rem;
+        color: $secondary-color;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 60px;
+        line-height: 1.2;
+    }
+
+}
+
+.about-portfolio-footer-content{
+    padding: 20px;
+    width: 70vw;
+    margin: 2rem auto;
+    div{
+        background: lighten($primary-color, 10%);
+        border-bottom: 4px solid $secondary-color;
+        margin-bottom: 15px;
+        padding: 20px;
+        line-height: 1.5rem;
+    }
+}

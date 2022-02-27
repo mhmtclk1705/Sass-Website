@@ -1,0 +1,28 @@
+.portfolio-container{
+
+@include bgImage(100vh, $background-image-url);
+
+}
+
+
+.portfolio-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:84vh;
+
+    .portfolio-content-up,
+    .portfolio-content-down{
+        // font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    .portfolio-content-mid{
+        font-size: 2rem;
+        margin-bottom: 30px;
+        border-bottom: 2px solid $text-color;
+        width: 100%;
+        text-align: center;
+    }
+    
+}
